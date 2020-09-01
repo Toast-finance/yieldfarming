@@ -52,10 +52,10 @@ async function main() {
     _print(`There are total   : ${totalStakedBPTAmount} BPT staked in AVO's BPT staking pool.`);
     _print(`                  = ${toDollar(totalStakedBPTAmount * BPTPrice)}\n`);
     _print(`You are staking   : ${stakedBPTAmount} BPT (${toFixed(stakedBPTAmount * 100 / totalStakedBPTAmount, 3)}% of the pool)`);
-    _print(`                  = [${YFIPerBPT * stakedBPTAmount} YFII, ${DAIPerBPT * stakedBPTAmount} DAI]`);
+    _print(`                  = [${YFIPerBPT * stakedBPTAmount} AVO, ${DAIPerBPT * stakedBPTAmount} DAI]`);
     _print(`                  = ${toDollar(YFIPerBPT * stakedBPTAmount * YFIIPrice + DAIPerBPT * stakedBPTAmount * DAIPrice)}\n`);
 
-    // YFII REWARDS
+    // AVO REWARDS
     _print("======== AVO REWARDS ========")
     // _print(" (Temporarily paused until further emission model is voted by the community) ");
     _print(`Claimable Rewards : ${toFixed(earnedYFI, 4)} AVO = ${toDollar(earnedYFI * YFIIPrice)}`);
